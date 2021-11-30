@@ -2,10 +2,10 @@
 	"name": "proyecto-fada",
 	"version": "1.0.0",
 	"description": "implementacion de programacion voraz y programacion dinamica",
-	"main": "index.ts",
+	"main": "src/index.ts",
 	"scripts": {
-		"start": "node index.ts",
-		"start:dev": "nodemon index.ts"
+		"start": "ts-node src/index.ts",
+		"start:dev": "nodemon src/index.ts"
 	},
 	"repository": {
 		"type": "git",
@@ -16,5 +16,8 @@
 	"bugs": {
 		"url": "https://github.com/juandsoto/proyecto-fada/issues"
 	},
-	"homepage": "https://github.com/juandsoto/proyecto-fada#readme"
+	"homepage": "https://github.com/juandsoto/proyecto-fada#readme",
+	"devDependencies": {
+		"@types/node": "^16.11.10"
+	}
 }
