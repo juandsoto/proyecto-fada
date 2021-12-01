@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-let matriz = [];
+let matriz: number[][] = [];
 
 const input = fs.readFileSync(path.resolve(__dirname, './input.txt'), 'utf8');
 
@@ -17,4 +17,6 @@ function parseMatriz() {
   return { matriz, cantidadEquipos, cantidadPaises };
 }
 
-export default parseMatriz();
+const info = parseMatriz();
+
+export default info;
