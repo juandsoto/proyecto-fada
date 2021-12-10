@@ -1,5 +1,5 @@
 import info from '../data/read';
-import { Referencia, Respuesta } from '../interfaces/interfaces';
+import { Respuesta } from '../interfaces/interfaces';
 
 interface Relacion {
   beneficioRel: number;
@@ -41,6 +41,7 @@ for (let { cantidadEquipos, pais } of relacion) {
     respuesta.beneficioMaximo += matriz[pais][equiposRestantes];
     respuesta.asignacion[pais] = equiposRestantes;
     equiposRestantes = 0;
+    break;
   }
 }
 

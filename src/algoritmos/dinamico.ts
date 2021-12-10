@@ -61,12 +61,12 @@ function agregarMaximo(): void {
 function construirRespuesta(): void {
   respuesta.beneficioMaximo = acumulado[0].beneficio[0];
   respuesta.asignacion.push(acumulado[0].decision[0]);
-  let indice: number = cantidadEquipos - acumulado[0].decision[0];
+  let equiposRestantes: number = cantidadEquipos - acumulado[0].decision[0];
   acumulado.forEach(item => {
     item.decision.forEach((decision, i) => {
-      if (indice === i) {
+      if (equiposRestantes === i) {
         respuesta.asignacion.push(decision);
-        indice -= decision;
+        equiposRestantes -= decision;
       }
     });
   });
